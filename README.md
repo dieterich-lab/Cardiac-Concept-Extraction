@@ -1,5 +1,3 @@
-# Cardica-Concept-Extraction
-
 # Supplement: Cardiac Concept Extraction from German Discharge Letters to Prefill Structured Reporting Forms
 
 Table 1: Translation of cardiac entities German-English and xml field name
@@ -83,3 +81,34 @@ Table 5: Human baseline evaluation per field
 |Raucher|98.6|
 |NYHA|94.4|
 |Typ Kardiomyopathie|100|
+
+Table 6a: Multiclass extractions - Raucher
+||precision|recall|f1|support|
+|---|---|---|---|---|
+|Ex|100|98|99|55|
+|Ja|100|100|100|18|
+|Unbekannt|99|100|99|94|
+|macro avg|100|99|100|167|
+|weighted avg|99|99|99|167|
+
+Table 6b: Multiclass extractions - NYHA
+||precision|recall|f1|support|
+|---|---|---|---|---|
+|I|98|92|95|66|
+|II|98|88|93|69|
+|III|81|100|89|25|
+|nicht erhoben|50|86|63|7|
+|macro avg|82|92|85|167|
+|weighted avg|94|92|92|167|
+
+Table 6c: Multiclass extractions - Typ Kardiomyopathie
+||precision|recall|f1|support|
+|---|---|---|---|---|
+|ARVC|100|100|100|2|
+|DCM|96|100|98|70|
+|HCM|86|95|90|20|
+|NCCM|100|80|89|5|
+|inflammatorische|100|100|100|1|
+|nicht erhoben|100|94|97|69|
+|macro avg|97|95|96|167|
+|weighted avg|97|96|96|167|
