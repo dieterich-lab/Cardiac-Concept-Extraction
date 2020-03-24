@@ -6,7 +6,7 @@ Table 1: Translation of cardiac entities German-English and xml field name
 |---|---|---|
 |Kardiomyopathie|Cardiomyopathy|gopl_kardiomyopathie|
 |Diabetes Mellitus|Diabetes mellitus|gopl_diabetes_mellitus|
-|Arterielle Hypertonie|Arterial hypertension|xml: gopl_arterielle_hypertonie|
+|Arterielle Hypertonie|Arterial hypertension|gopl_arterielle_hypertonie|
 |Niereninsuffizeinz|Kidney failure|gopl_niereninsuffizienz|
 |Zustand nach Myokardinfarkt|Condition after myocardial infarction|gopl_zustand_myokardinfarkt|
 |Zustand nach Dekompensation|Condition after decompensation|gopl_zustand_nach_dekompensation|
