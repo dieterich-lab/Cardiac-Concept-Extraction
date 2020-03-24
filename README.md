@@ -65,7 +65,7 @@ Table 5: Human baseline evaluation per field
 
 |Cardiac Entity|F1-score in %|
 |---|---|
-|Hypertonie||98.8|
+|Hypertonie|98.8|
 |Diabetes Mellitus|98.4|
 |Niereninsuffizienz|90|
 |Zustand nach Myokardinfarkt|95.4|
