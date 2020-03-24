@@ -19,6 +19,13 @@ Table 1: Translation of cardiac entities German-English and xml field name
 |Familienanamnese|(Medical) Family History|gopl_familienanamnese_kardiovaskulaere_ereignisse|
 |Interventionelle koronare Revaskularisation|Coronary revascularization|gopl_interventionelle_koronare_revaskularisation|
 |Kardiale Kontraktilitätsmodulation (CCM)|Cardiac Contractility Modulation (CCM)|gopl_ccm|
+|Racuher|Smoker|gdrp_raucher|
+|NYHA Klasse|NYHA Class|gdrp_nyha_klasse_derzeit|
+|Typ Kardiomyopathie|Type cardiomyopathy|gdrp_einteilungmitkardiomyopathie|
+|Körpergröße|Body height|gtfe_koerpergroesse|
+|Körpergewicht|Body weight|gtfe_gewicht|
+|Raucher - Menge|Smoking - amount|gtfe_pack_years|
+|Raucher - Ex seit|Smoking - Ex since|gtfe_ex_raucher|
 
 
 Table 2: Extraction method and rule per binary cardiac entity
@@ -47,7 +54,7 @@ Table 3: Extraction method and rule per multiclass cardiac entity
 |gdrp_nyha_klasse_derzeit|Regular expression|(?<=NYHA)\s?(Stadium)?(\sI-II<notextile>|</notextile>\sII-III<notextile>|</notextile>\sIII-IV<notextile>|</notextile>\sI{1,3}<notextile>|</notextile>\sIV)|I, II, III|
 |gdrp_einteilungmitkardiomyopathie|Substirng matching|("hypertroph" or "HCM") or ("compaction" or "NCCM") or ("dilatativ" or "DCM") or ("arrhythmogen" or "ARVCM" or "ARVC") or ("inflammatorisch") in string.lower|DCM, HCM, NCCM, ARVC, inflammatorisch, unkonw|
 
-Table 3: Extraction method and rule per numeric cardiac entity
+Table 4: Extraction method and rule per numeric cardiac entity
 
 |XML Field|Extraction Method|Rules|
 |---|---|---|
@@ -55,3 +62,24 @@ Table 3: Extraction method and rule per numeric cardiac entity
 |gtfe_gewicht|Regular expression|'\d{2,3}\s?kg'|
 |gtfe_pack_years|Regular expression|'\d+\s+(py<notextile>|</notextile>pack\-?years)'|
 |gtfe_ex_raucher|Regular expression|'[12][9012][0-9][0-9]'|
+
+Table 5: Human baseline evaluation per field
+
+|Cardiac Entity|F1-score in %|
+|---|---|
+|Hypertonie||98.8|
+|Diabetes Mellitus|98.4|
+|Niereninsuffizienz|90|
+|Zustand nach Myokardinfarkt|95.4|
+|Zustand nach Dekompensation|92.7|
+|Vorhofflimmern|98.9|
+|Herzklappeninsuffizienz|86.9|
+|Kardiomyopathie|98.6|
+|Koronarer Bypass Operation|100|
+|CCM|100|
+|Dyslipidämie|98.4|
+|Familienanamnese|100|
+|Interventionelle koronare Revaskularisation|100|
+|Raucher|98.6|
+|NYHA|94.4|
+|Typ Kardiomyopathie|100|
