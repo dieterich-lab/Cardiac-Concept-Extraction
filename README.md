@@ -50,7 +50,7 @@ Table 3: Extraction method and rule per multiclass cardiac entity
 |---|---|---|---|
 |gdrp_raucher|Majority Vote (four labeling functions using regular expression and pattern matching)|see predict_smoking.py|Yes, no, unknown|
 |gdrp_nyha_klasse_derzeit|Regular expression|(?<=NYHA)\s?(Stadium)?(\sI-II\|\sII-III\|\sIII-IV\|\sI{1,3}\|\sIV)|I, II, III|
-|gdrp_einteilungmitkardiomyopathie|Substirng matching|("hypertroph" or "HCM") or ("compaction" or "NCCM") or ("dilatativ" or "DCM") or ("arrhythmogen" or "ARVCM" or "ARVC") or ("inflammatorisch") in string.lower|DCM, HCM, NCCM, ARVC, inflammatorisch, unkonw|
+|gdrp_einteilungmitkardiomyopathie|Substirng matching|("hypertroph" or "HCM") or ("compaction" or "NCCM") or ("dilatativ" or "DCM") or ("arrhythmogen" or "ARVCM" or "ARVC") or ("inflammatorisch") in string.lower|DCM, HCM, NCCM, ARVC, inflammatorisch, unknown|
 
 Table 4: Extraction method and rule per numeric cardiac entity
 
