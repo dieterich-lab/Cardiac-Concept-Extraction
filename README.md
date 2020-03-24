@@ -1,1 +1,57 @@
 # Cardica-Concept-Extraction
+
+# Supplement: Cardiac Concept Extraction from German Discharge Letters to Prefill Structured Reporting Forms
+
+Table 1: Translation of cardiac entities German-English and xml field name
+
+|German entity name|English entity name|XML field name|
+|---|---|---|
+|Kardiomyopathie|Cardiomyopathy|gopl_kardiomyopathie|
+|Diabetes Mellitus|Diabetes mellitus|gopl_diabetes_mellitus|
+|Arterielle Hypertonie|Arterial hypertension|xml: gopl_arterielle_hypertonie|
+|Niereninsuffizeinz|Kidney failure|gopl_niereninsuffizienz|
+|Zustand nach Myokardinfarkt|Condition after myocardial infarction|gopl_zustand_myokardinfarkt|
+|Zustand nach Dekompensation|Condition after decompensation|gopl_zustand_nach_dekompensation|
+|Vorhofflimmern|Atrial fibrillation|gopl_vorhofflimmern_flattern|
+|Herzklappenerkrankung|Heart valve desease|gopl_herzklappenerkrankung|
+|Koronare Bypass Operation|Coronary bypass surgery|gopl_koronare_bypass_operation|
+|Dislipidämie|Dyslipidemia|gopl_dyslipidaemie|
+|Familienanamnese|(Medical) Family History|gopl_familienanamnese_kardiovaskulaere_ereignisse|
+|Interventionelle koronare Revaskularisation|Coronary revascularization|gopl_interventionelle_koronare_revaskularisation|
+|Kardiale Kontraktilitätsmodulation (CCM)|Cardiac Contractility Modulation (CCM)|gopl_ccm|
+
+
+Table 2: Extraction method and rule per binary cardiac entity
+
+|XML Field|Extraction Method|Rules|
+|---|---|---|
+|gopl_kardiomyopathie|Substring matching|"myopathie" and not ("ischämische kar" in string (Diagnosis)|
+|gopl_diabetes_mellitus|Substring matching|"diabetes" or "iddm" or "DM" in string.lower (Cvrf)|
+|xml: gopl_arterielle_hypertonie|Substring matching|"hyperton" in string.lower (Cvrf)|
+|gopl_niereninsuffizienz|Substring matching|"nierenins" in string.lower (Diagnosis)|
+|gopl_zustand_myokardinfarkt|Substring matching|'myokardinfarkt' or 'wandinfarkt' or 'STEM' in string.lower (Diagnosis)|
+|gopl_zustand_nach_dekompensation|Substring matching|"dekompensation" in string.lower (Anamnese, Diagnosis)|
+|gopl_vorhofflimmern_flattern|Substring matching|"vorhof" and ("flimmern" or "flattern") in string.lower (Diagnosis)|
+|gopl_herzklappenerkrankung|Substring matching|"klappe" and 'insuf') or (("mitral" or "aorten" or "pulmonal" or "trikuspi" or "bikuspi") and insuf in string.lower (Diagnosis)|
+|gopl_koronare_bypass_operation|Substring matching|"bypass" or "ACB" in stirng.lower (Diagnosis)|
+|gopl_dyslipidaemie|Substirng matching|cholester" or "dyslip" or "hyperlip" in string.lower (Cvrf)|
+|gopl_familienanamnese_kardiovaskulaere_ereignisse|Substring matching|"familienanamnese" and not "leer" and not "negativ" and not     "unauffällig" in string.lower (Cvrf, FA)|
+|gopl_interventionelle_koronare_revaskularisation|Substring matching|"stent" or "ballon" or "ptca" in string.lower (Diagnosis)|
+|gopl_ccm|Regular Expression|"\bCCM\b"|
+
+Table 3: Extraction method and rule per multiclass cardiac entity
+
+|XML Field|Extraction Method|Rules|Classes|
+|---|---|---|---|
+|gdrp_raucher|Majority Vote (four labeling functions using regular expression and pattern matching)|see predict_smoking.py|Yes, no, unknown|
+|gdrp_nyha_klasse_derzeit|Regular expression|(?<=NYHA)\s?(Stadium)?(\sI-II<notextile>|</notextile>\sII-III<notextile>|</notextile>\sIII-IV<notextile>|</notextile>\sI{1,3}<notextile>|</notextile>\sIV)|I, II, III|
+|gdrp_einteilungmitkardiomyopathie|Substirng matching|("hypertroph" or "HCM") or ("compaction" or "NCCM") or ("dilatativ" or "DCM") or ("arrhythmogen" or "ARVCM" or "ARVC") or ("inflammatorisch") in string.lower|DCM, HCM, NCCM, ARVC, inflammatorisch, unkonw|
+
+Table 3: Extraction method and rule per numeric cardiac entity
+
+|XML Field|Extraction Method|Rules|
+|---|---|---|
+|gtfe_koerpergroesse|Regular expression|'(\d{3}\s?cm)<notextile>|</notextile>([12][\,\.][0-9]{2}\s?m)'|
+|gtfe_gewicht|Regular expression|'\d{2,3}\s?kg'|
+|gtfe_pack_years|Regular expression|'\d+\s+(py<notextile>|</notextile>pack\-?years)'|
+|gtfe_ex_raucher|Regular expression|'[12][9012][0-9][0-9]'|
