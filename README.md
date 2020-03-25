@@ -112,3 +112,10 @@ Table 6c: Multiclass extractions - Typ Kardiomyopathie
 |nicht erhoben|100|94|97|69|
 |macro avg|97|95|96|167|
 |weighted avg|97|96|96|167|
+
+Table 7: Types of Cardiomyopathy
+|Abbreviation|Description|
+|ARVC|Arrhythmogene rechtsventrikuläre Kardiomyopathie|
+|DCM|Dilatative Kardiomyopathie|
+|HCM|Hypertrophe Kardiomyopathie|
+|NCCM|Non-Compaction-Kardiomyopathie|
