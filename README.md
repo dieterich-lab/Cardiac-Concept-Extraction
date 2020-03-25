@@ -115,6 +115,7 @@ Table 6c: Multiclass extractions - Typ Kardiomyopathie
 
 Table 7: Types of Cardiomyopathy
 |Abbreviation|Description|
+|---|---|---|
 |ARVC|Arrhythmogene rechtsventrikuläre Kardiomyopathie|
 |DCM|Dilatative Kardiomyopathie|
 |HCM|Hypertrophe Kardiomyopathie|
