@@ -120,3 +120,7 @@ Table 7: Types of Cardiomyopathy
 |DCM|Dilatative Kardiomyopathie|
 |HCM|Hypertrophe Kardiomyopathie|
 |NCCM|Non-Compaction-Kardiomyopathie|
+
+
+Figure 1
+![Figure 1](https://github.com/dieterich-lab/Cardiac-Concept-Extraction/blob/master/docx2dpdf.PNG)
