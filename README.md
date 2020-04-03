@@ -1,4 +1,4 @@
-# Supplement: Cardiac Concept Extraction from German Discharge Letters to Prefill Structured Reporting Forms
+# Supplement: Extraction of Cardiovascular Concepts from German Discharge Letters to Prefill Structured Reporting Forms
 
 Table 1: Translation of cardiac entities German-English and xml field name
 
