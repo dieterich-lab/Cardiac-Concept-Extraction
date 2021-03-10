@@ -11,7 +11,7 @@ The amount of text in each subsection is varying. The subsections contain free u
 Occasionally subsections are titled differently, but contain similar information, e.g. therapy/medication. Often terms are abbreviated, e.g. CRF/Cardiovascular risk factors. The letters are concluded by a salutation and the names of the physicians involved. Figure 1 shows a dummy discharge letter:
 
 ![Example discharge letters.](misc/dummy_discharge.png)
-Figure 1: Example discharge letters.
+Figure 1: Example discharge letter.
 
 ### 1.2. Sampling Method
 To obtain representative samples for annotation from our base corpus, we needed to sample a subset of discharge letters. As a probability sampling plan, to avoid too much bias, we chose stratified sampling. We performed the following steps:
