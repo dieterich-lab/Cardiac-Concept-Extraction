@@ -47,7 +47,7 @@ Figure 2: Distribution of sequence length per concept.
 Table 2: Inter annotator agreement per concept per corpus split including average seed.
 
 |Concept | Seed1 | Seed2 | Seed3 | Avg. Seed | Main35 |
-|--|--|--|--|--|
+|--|--|--|--|--|--|
 |AP|72.1|80.6|93.9|82.2|78|
 |Cholesterin|94.1|94.7|100|96.2|95.2|
 |Diabetes|100|100|88.9|96.3|96|
