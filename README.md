@@ -9,12 +9,7 @@ Length of the discharge letters in our data set vary a lot. The letters contain 
 All documents share a basic structure. Thus, typical for clinical routine text data, they contain a semi-structure. The majority of the discharge letters contain a header containing contact information, a salutation, a clinical section and a summary. The clinical section typically contains a subset of the following subsections: diagnosis, cardiovascular risk factors, allergies, anamnese, physical examination (Körperlicher Untersuchungsbefund), laboratory data, ECG, MRI and recommended therapy/medication.
 The amount of text in each subsection is varying. The subsections contain free unstructured text, sometimes tables, rarely images. 
 Occasionally subsections are titled differently, but contain similar information, e.g. therapy/medication. Often terms are abbreviated, e.g. CRF/Cardiovascular risk factors. The letters are concluded by a salutation and the names of the physicians involved. Figure 1 shows a dummy discharge letter:
-
-<object data="misc/dummy_discharge.pdf" type="application/pdf" width="250px">
-    <embed src="dummy_discharge.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="misc/dummy_discharge.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![Example discharge letters.](misc/dummy_discharge.png)
 
 
 ### 1.2. Sampling Method
