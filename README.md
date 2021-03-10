@@ -63,7 +63,7 @@ Table 2: Inter annotator agreement per concept per corpus split including averag
 
 ## 3. Inter Annotator Agreement
 
-Table 4: Examples for evaluating entity-wise exact and partial IAA.
+Table 3: Examples for evaluating entity-wise exact and partial IAA.
 
 |A | B | Exact | Partial | Type
 |--|---|--|--|--|
@@ -86,7 +86,7 @@ Table 4: Examples for evaluating entity-wise exact and partial IAA.
 |21,231 Schwindel | 21,230-232 Schwindel | FP | TP | single token vs range token same class|
 |21,246-248 Synkope | 21,246 Schwindel | FP | FP | range token vs single token different class | 
 
-Table 2 contains the annotation of annotator A, column two the annotation of annotator B. Column three and four contain the evaluation using IAA entitywise exact and partial match. The last column contains further descriptions.
+Table 3 contains the annotation of annotator A, column two the annotation of annotator B. Column three and four contain the evaluation using IAA entitywise exact and partial match. The last column contains further descriptions.
 
 Entitywise exact match IAA score results in: 
 
