@@ -82,11 +82,11 @@ Table 3: Examples for evaluating entity-wise exact and partial IAA.
 |20,162-20,164 Ödeme | 20,162-20,163 Ödeme | FP | TP | range token with partial overlap, same class, same start token|
 |21,210 Synkope | 21,210 Hyp | FP | FP | single token match different class|
 |21,220-224 Dyspnoe | 21,221-222 Dyspnoe | FP | TP | range token partial overlap, same class, different start and end token|
-|21,225-226 FA | 21,225-226 Schwindel | FP | FP | range token exact match different class|
-|21,231 Schwindel | 21,230-232 Schwindel | FP | TP | single token vs range token same class|
-|21,246-248 Synkope | 21,246 Schwindel | FP | FP | range token vs single token different class | 
+|21,225-21,226 FA | 21,225-21,226 Schwindel | FP | FP | range token exact match different class|
+|21,231 Schwindel | 21,230-21,232 Schwindel | FP | TP | single token vs range token same class|
+|21,246-21,248 Synkope | 21,246 Schwindel | FP | FP | range token vs single token different class | 
 
-Table 3 contains the annotation of annotator A, column two the annotation of annotator B. Column three and four contain the evaluation using IAA entitywise exact and partial match. The last column contains further descriptions.
+Table 3 contains the annotation of annotator A, column two the annotation of annotator B. Column three and four contain the evaluation using IAA entitywise exact and partial match. The last column contains further descriptions. *20,110-20,111 Dyspnoe* means: in paragraph 20, token 110 and token 111 are annotated as Dyspnoe.
 
 Entitywise exact match IAA score results in: 
 
