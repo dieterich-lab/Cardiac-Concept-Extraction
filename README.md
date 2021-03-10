@@ -69,13 +69,13 @@ Table 2 contains the annotation of annotator A, column two the annotation of ann
 
 Entitywise exact match IAA score results in: 
 
-Precision = tp/fp+tp = 10 / 7 + 10 = 0.59
-Recall = tp/fn + tp = 10 / 2 + 10 = 0.83        
+Precision = tp/fp+tp = 10 / 7 + 10 = 0.59<br>
+Recall = tp/fn + tp = 10 / 2 + 10 = 0.83<br>        
 F1 = 0.69
 
 Entitywise partial match IAA score results in: 
 
-Precision = tp/fp+tp = 12 / 7 + 12 = 0.63
-Recall = tp/fn + tp = 12 / 2 + 12 = 0.86
+Precision = tp/fp+tp = 12 / 7 + 12 = 0.63<br>
+Recall = tp/fn + tp = 12 / 2 + 12 = 0.86<br>
 F1 = 0.73
 
