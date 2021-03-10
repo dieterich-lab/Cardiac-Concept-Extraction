@@ -104,3 +104,24 @@ Entitywise partial match IAA score results in:
 
 *F1 = 0.73*
 
+## Section 3: LSTM Classifier
+
+Table 4: Mean average 4-fold corss validated results per concept of the LSTM classifier.
+
+|CC|Precision|Recall|F1-score|Instances|
+|--|--|--|--|--|
+|AnginaPectoris|0.87|0.62|0.725|187|
+|Hypertonie|0.8925|0.9075|0.8975|103|
+|Cholesterin/Lipide|0.9045|0.85|0.885|36|
+|Dyspnoe|0.815|0.6525|0.717|100|
+|Schwindel|0.97|0.795|0.87|44|
+|Synkope|0.9425|0.7725|0.85|52|
+|Palpitation|0.865|0.665|0.735|45|
+|Familienanamnese|0.85|0.7175|0.765|24|
+|Oedeme|0.9525|0.6775|0.785|63|
+|Nikotinkonsum|0.9725|0.7925|0.87|30|
+|Nykturie|1|0.85|0.9175|19|
+|DiabetesMellitus|0.9025|0.905|0.8975|38|
+|micro avg|0.895|0.7275|0.8|738|
+|macro avg|0.9125|0.7675|0.825|738|
+|weighted avg|0.9|0.7275|0.7975|738|
