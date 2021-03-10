@@ -41,8 +41,8 @@ Table 1: Cardiovascular Concepts including ICD-10 code (if available) and descri
 |        Schwindel    |   H81-82  | Vertigo describes the feeling of turning or swaying. It is not graded.    |
 |        Synkope    |  R55 | Syncopes describes the sudden loss of consciousness. It is not graded.|
 
-Figure 2: Distribution of sequence length per concept.
 ![Distribution of sequence length per concept.](misc/heatmap.png)
+Figure 2: Distribution of sequence length per concept.
 
 ## 3. Inter Annotator Agreement
 
