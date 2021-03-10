@@ -125,3 +125,18 @@ Table 4: Mean average 4-fold corss validated results per concept of the LSTM cla
 |micro avg|0.895|0.7275|0.8|738|
 |macro avg|0.9125|0.7675|0.825|738|
 |weighted avg|0.9|0.7275|0.7975|738|
+
+The classifier had the following architecture:
+
+1. An embedding layer using 850B Glove embeddings with dimension 300.
+2. A bidirectional LSTM layer with dimension 128.
+3. A 0.25 dropout layer
+4. A dense layer with dimension 64
+5. A final crf layer
+
+Following hyperparamters had been applied:
+1. Batchsize: 64
+2. Epochs: 30
+3. Early stopping after five epoechs on validation loss
+4. Validation split 10%
+5. maximum sequence length: 512
