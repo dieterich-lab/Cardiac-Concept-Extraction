@@ -44,26 +44,26 @@ Table 1: Cardiovascular Concepts including ICD-10 code (if available) and descri
 ![Distribution of sequence length per concept.](misc/heatmap.png)
 Figure 2: Distribution of sequence length per concept.
 
-Table 2: Inter annotator agreement per concept per corpus split.
+Table 2: Inter annotator agreement per concept per corpus split including average seed.
 
-|Concept | Seed1 | Seed2 | Seed3 | Main35 |
+|Concept | Seed1 | Seed2 | Seed3 | Avg. Seed | Main35 |
 |--|--|--|--|--|
-|AP|72.1|80.6|93.9|78|
-|Cholesterin|94.1|94.7|100|95.2|
-|Diabetes|100|100|88.9|96|
-|Dyspnoe|92.3|91.7|62.5|82.5|
-|FA|57.1|80|94.7|95.2|
-|Hyp|100|95.7|100|98.1|
-|Nikotin|93.3|92.3|100|97|
-|Nykturie|88.8|90.9|100|100|
-|Oedeme|80|95.2|93.3|97.6|
-|Palpitation|92.3|100|66.7|84.8|
-|Schwindel|83.3|88.8|100|90|
-|Synkope|100|83.3|92.3|100|
+|AP|72.1|80.6|93.9|82.2|78|
+|Cholesterin|94.1|94.7|100|96.2|95.2|
+|Diabetes|100|100|88.9|96.3|96|
+|Dyspnoe|92.3|91.7|62.5|81.1|82.5|
+|FA|57.1|80|94.7|77.1|95.2|
+|Hyp|100|95.7|100|98.5|98.1|
+|Nikotin|93.3|92.3|100|95.2|97|
+|Nykturie|88.8|90.9|100|93.2|100|
+|Oedeme|80|95.2|93.3|89.5|97.6|
+|Palpitation|92.3|100|66.7|86.3|84.8|
+|Schwindel|83.3|88.8|100|90.7|90|
+|Synkope|100|83.3|92.3|91.9|100|
 
 ## 3. Inter Annotator Agreement
 
-Table 2: Examples for evaluating entity-wise exact and partial IAA.
+Table 4: Examples for evaluating entity-wise exact and partial IAA.
 
 |A | B | Exact | Partial | Type
 |--|---|--|--|--|
