@@ -46,7 +46,7 @@ Figure 2: Distribution of sequence length per concept.
 
 Table 2: Inter annotator agreement per concept per corpus split including average seed.
 
-|Concept | Seed1 | Seed2 | Seed3 | Avg. Seed | Main35 |
+|Cardiovascular Concept  | Seed1 | Seed2 | Seed3 | Avg. Seed | Main35 |
 |--|--|--|--|--|--|
 |AP|72.1|80.6|93.9|82.2|78|
 |Cholesterin|94.1|94.7|100|96.2|95.2|
@@ -108,7 +108,7 @@ Entitywise partial match IAA score results in:
 
 Table 4: Mean average 4-fold corss validated results per concept of the LSTM classifier.
 
-|CC|Precision|Recall|F1-score|Instances|
+|Cardiovascular Concept |Precision|Recall|F1-score|Instances|
 |--|--|--|--|--|
 |AnginaPectoris|0.87|0.62|0.725|187|
 |Hypertonie|0.8925|0.9075|0.8975|103|
