@@ -9,8 +9,9 @@ Length of the discharge letters in our data set vary a lot. The letters contain 
 All documents share a basic structure. Thus, typical for clinical routine text data, they contain a semi-structure. The majority of the discharge letters contain a header containing contact information, a salutation, a clinical section and a summary. The clinical section typically contains a subset of the following subsections: diagnosis, cardiovascular risk factors, allergies, anamnese, physical examination (Körperlicher Untersuchungsbefund), laboratory data, ECG, MRI and recommended therapy/medication.
 The amount of text in each subsection is varying. The subsections contain free unstructured text, sometimes tables, rarely images. 
 Occasionally subsections are titled differently, but contain similar information, e.g. therapy/medication. Often terms are abbreviated, e.g. CRF/Cardiovascular risk factors. The letters are concluded by a salutation and the names of the physicians involved. Figure 1 shows a dummy discharge letter:
-![Example discharge letters.](misc/dummy_discharge.png)
 
+![Example discharge letters.](misc/dummy_discharge.png)
+Figure 1: Example discharge letters.
 
 ### 1.2. Sampling Method
 To obtain representative samples for annotation from our base corpus, we needed to sample a subset of discharge letters. As a probability sampling plan, to avoid too much bias, we chose stratified sampling. We performed the following steps:
@@ -39,6 +40,9 @@ Table 1: Cardiovascular Concepts including ICD-10 code (if available) and descri
 |        Palpitation    |    R00.2 | Palpitation describe the conscious awareness of your own heartbeat. It is not graded.    |
 |        Schwindel    |   H81-82  | Vertigo describes the feeling of turning or swaying. It is not graded.    |
 |        Synkope    |  R55 | Syncopes describes the sudden loss of consciousness. It is not graded.|
+
+Figure 2: Distribution of sequence length per concept.
+![Distribution of sequence length per concept.](misc/heatmap.png)
 
 ## 3. Inter Annotator Agreement
 
