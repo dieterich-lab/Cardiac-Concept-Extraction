@@ -23,6 +23,8 @@ In total we sampled 204 discharge letters from the corpus. Following our annotat
 
 ## 2. Cardiovascular Concepts
 
+Table 1: Cardiovascular Concepts including ICD-10 code (if available) and description. 
+
 | Cardiovascular Concept | ICD-10 | Description |
 |--|--|--|
 |	Angina Pectoris | Angina pectoris | I20 | describes a chest pain or preassure. It is graded using the CCS classification. Value range is 1-4, while ranges like "2-3" can be used for annotation. |   
