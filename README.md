@@ -58,9 +58,24 @@ Table 2: Examples for evaluating entity-wise exact and partial IAA.
 |20,128 Palpitation | = | TP | TP | exact single match|
 |20,133 Schwindel | = | TP | TP | exact single match|
 |20,141 Synkope | = | TP | TP | exact single match|
-|20,162-20,164 Ödeme | 20,162-20,163 Ödeme | FP | TP | \makecell[l]{range token with partial overlap,| same class, same start token}|
+|20,162-20,164 Ödeme | 20,162-20,163 Ödeme | FP | TP | range token with partial overlap, same class, same start token|
 |21,210 Synkope | 21,210 Hyp | FP | FP | single token match different class|
-|21,220-224 Dyspnoe | 21,221-222 Dyspnoe | FP | TP | \makecell[l]{range token partial overlap,| same class, different start and end token}|
+|21,220-224 Dyspnoe | 21,221-222 Dyspnoe | FP | TP | range token partial overlap, same class, different start and end token|
 |21,225-226 FA | 21,225-226 Schwindel | FP | FP | range token exact match different class|
 |21,231 Schwindel | 21,230-232 Schwindel | FP | TP | single token vs range token same class|
 |21,246-248 Synkope | 21,246 Schwindel | FP | FP | range token vs single token different class | 
+
+Table 2 contains the annotation of annotator A, column two the annotation of annotator B. Column three and four contain the evaluation using IAA entitywise exact and partial match. The last column contains further descriptions.
+
+Entitywise exact match IAA score results in: 
+
+Precision = tp/fp+tp = 10 / 7 + 10 = 0.59
+Recall = tp/fn + tp = 10 / 2 + 10 = 0.83        
+F1 = 0.69
+
+Entitywise partial match IAA score results in: 
+
+Precision = tp/fp+tp = 12 / 7 + 12 = 0.63
+Recall = tp/fn + tp = 12 / 2 + 12 = 0.86
+F1 = 0.73
+
