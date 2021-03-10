@@ -39,3 +39,28 @@ Table 1: Cardiovascular Concepts including ICD-10 code (if available) and descri
 |        Palpitation    |    R00.2 | Palpitation describe the conscious awareness of your own heartbeat. It is not graded.    |
 |        Schwindel    |   H81-82  | Vertigo describes the feeling of turning or swaying. It is not graded.    |
 |        Synkope    |  R55 | Syncopes describes the sudden loss of consciousness. It is not graded.|
+
+## 3. Inter Annotator Agreement
+
+Table 2: Examples for evaluating entity-wise exact and partial IAA.
+
+|A | B | Exact | Partial | Type
+|--|---|--|--|--|
+|17,4-17,5 Hyp | = | TP | TP | exact range match |
+|17,8 FA | = | TP | TP | exact single match|
+|17,12-17,16 FA | X | FN | FN | no annotation in B|
+|20,43 Palpitation | X | FN | FN | no annotation in B|
+|20,67 Dyspnoe | = | TP | TP | exact single matc|
+|20,70 Schwindel | = | TP | TP | exact single matc|
+|20,106 Dyspnoe | = | TP | TP | exact single match|
+|X | 20,110-20,111 Dyspnoe | FP | FP | no annotation in A|
+|20,119-20,120 AP | = | TP | TP | exact range match|
+|20,128 Palpitation | = | TP | TP | exact single match|
+|20,133 Schwindel | = | TP | TP | exact single match|
+|20,141 Synkope | = | TP | TP | exact single match|
+|20,162-20,164 Ödeme | 20,162-20,163 Ödeme | FP | TP | \makecell[l]{range token with partial overlap,| same class, same start token}|
+|21,210 Synkope | 21,210 Hyp | FP | FP | single token match different class|
+|21,220-224 Dyspnoe | 21,221-222 Dyspnoe | FP | TP | \makecell[l]{range token partial overlap,| same class, different start and end token}|
+|21,225-226 FA | 21,225-226 Schwindel | FP | FP | range token exact match different class|
+|21,231 Schwindel | 21,230-232 Schwindel | FP | TP | single token vs range token same class|
+|21,246-248 Synkope | 21,246 Schwindel | FP | FP | range token vs single token different class | 
