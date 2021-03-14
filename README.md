@@ -49,6 +49,10 @@ Figure 2: Distribution of sequence length per concept.
 
 Figure 3: Distribution of concept counts per document.
 
+![Distribution of sequence length per concept.](misc/ap_seq_examples.png)
+
+Figure 4: Sequence examples for concept angina pectoris, which appeared at least twice in the corpus.
+
 Table 2: Inter annotator agreement per concept per corpus split including average seed.
 
 |Cardiovascular Concept  | Seed1 | Seed2 | Seed3 | Avg. Seed | Main35 |
