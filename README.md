@@ -42,9 +42,11 @@ Table 1: Cardiovascular Concepts including ICD-10 code (if available) and descri
 |        Synkope    |  R55 | Syncopes describes the sudden loss of consciousness. It is not graded.|
 
 ![Distribution of sequence length per concept.](misc/heatmap.png)
+
 Figure 2: Distribution of sequence length per concept.
 
 ![Distribution of sequence length per concept.](misc/hist_cardioanno_concepts.PNG)
+
 Figure 3: Distribution of concept counts per document.
 
 Table 2: Inter annotator agreement per concept per corpus split including average seed.
