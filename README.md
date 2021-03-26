@@ -113,7 +113,7 @@ Entitywise partial match IAA score results in:
 
 *F1 = 0.73*
 
-## Section 3: LSTM Classifier
+## 3. LSTM Classifier
 
 Table 4: Mean average 4-fold corss validated results per concept of the LSTM classifier.
 
