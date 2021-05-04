@@ -92,3 +92,8 @@ Hyperparamters LSTM classifier:
 
 ![Example discharge letters.](../misc/prec_rec_balance_CardioBert.PNG)
 Figure 2: Balance between precision and recall per concept of the two baseline models and the BERT models. Each data point in the scatter plots represents a cardiovascular concept. Defining the regression line with y = b + ax, an optimal result would be: r2=1, a slope coefficient of a=1 and a bias b=0.
+
+### Significance test
+
+![Example discharge letters.](../misc/sign_test_CardioBERT.PNG)
+Figure 3: 
