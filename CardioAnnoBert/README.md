@@ -60,7 +60,13 @@ Feature functions CRF:
 | EndOfSentence | token is end of sentence | binary | '.', True |
 | BeginningOfSentence | token is beginning of sentence | binary | 'Der', True |
 
-* Feature is used as well for context token (+1: subsequent token, -1: preceding token)
+\* Feature is used as well for context token (+1: subsequent token, -1: preceding token)
+
+Details CRF:
+
+Library: sklearn-crfsuite==0.3.6
+Algorithm: lbfgs
+Hapyerparameters: c1=0.01, c2=0.5, max_iterations=100, all_possible_transitions=False
 
 ### LSTM Classifier
 
