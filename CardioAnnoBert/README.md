@@ -85,3 +85,8 @@ Hyperparamters LSTM classifier:
 3. Early stopping after five epoechs on validation loss
 4. Validation split 10%
 5. maximum sequence length: 512
+
+## 4. Results
+
+### Precision/Recall Balance
+
