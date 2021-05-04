@@ -90,7 +90,10 @@ Hyperparamters LSTM classifier:
 
 ### Precision/Recall and F1-score per model per concept
 
+4-fold cross validation per model. Floating point numbers in *support* column due to summing up results of all folds and division by four.
+
 #### CRF
+Table 2: 4-foild cross validation of CRF model. Scores per concept.
 
 ||precision|recall|f1-score|support|
 |--|--|--|--|--|
@@ -111,6 +114,7 @@ Hyperparamters LSTM classifier:
 |weighted avg|0.8875|0.7025|0.775|738|
 
 #### LSTM
+Table 3: 4-foild cross validation of LSTM model. Scores per concept.
 
 ||precision|recall|f1-score|support|
 |--|--|--|--|--|
@@ -131,6 +135,7 @@ Hyperparamters LSTM classifier:
 |weighted avg|0.9|0.7275|0.7975|738|
 
 #### BERTscratch
+Table 4: 4-foild cross validation of BERTscratch model. Scores per concept.
 
 | Entity Class | F1-Score | Precision | Recall | Support |
 |--|--|--|--|--|
@@ -151,6 +156,7 @@ Hyperparamters LSTM classifier:
 |weighted avg|0.830|0.860|0.815|738.0|
 
 #### BERTbase
+Table 5: 4-foild cross validation of BERTbase model. Scores per concept.
 
 | Entity Class | F1-Score | Precision | Recall | Support |
 |--|--|--|--|--|
@@ -171,6 +177,7 @@ Hyperparamters LSTM classifier:
 |weighted avg|0.860|0.876|0.853|738.0|
 
 #### BERTfine
+Table 5: 4-foild cross validation of BERTfine model. Scores per concept.
 
 | Entity Class | F1-Score | Precision | Recall | Support |
 |--|--|--|--|--|
