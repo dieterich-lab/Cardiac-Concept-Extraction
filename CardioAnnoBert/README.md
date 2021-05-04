@@ -88,6 +88,103 @@ Hyperparamters LSTM classifier:
 
 ## 4. Results
 
+### Precision/Recall and F1-score per model per concept
+
+#### CRF
+
+||precision|recall|f1-score|support|
+|AnginaPectoris|0.855|0.5825|0.6875|186.75|
+|Hypertonie|0.895|0.8975|0.895|102.5|
+|Cholesterin/Lipide|0.9045|0.87|0.885|35.75|
+|Dyspnoe|0.8025|0.6224|0.6975|99.5|
+|Schwindel|0.95|0.8|0.8674|43.75|
+|Synkope|0.965|0.795|0.87|51.5|
+|Palpitation|0.9325|0.7025|0.7975|45|
+|Familienanamnese|0.92|0.765|0.83|23.5|
+|Oedeme|0.865|0.425|0.57|62.75|
+|Nikotinkonsum|0.9199|0.7975|0.855|30.25|
+|Nykturie|1|0.95|0.9725|19.25|
+|DiabetesMellitus|0.8825|0.9025|0.885|37.5|
+|micro avg|0.885|0.7025|0.7825|738|
+|macro avg|0.9075|0.76|0.8175|738|
+|weighted avg|0.8875|0.7025|0.775|738|
+
+#### LSTM
+
+||precision|recall|f1-score|support|
+|AnginaPectoris|0.87|0.62|0.725|186.75|
+|Hypertonie|0.8925|0.9075|0.8975|102.5|
+|Cholesterin/Lipide|0.9045|0.85|0.885|35.75|
+|Dyspnoe|0.815|0.6525|0.717|99.5|
+|Schwindel|0.97|0.795|0.87|43.75|
+|Synkope|0.9425|0.7725|0.85|51.5|
+|Palpitation|0.865|0.665|0.735|45|
+|Familienanamnese|0.85|0.7175|0.765|23.5|
+|Oedeme|0.9525|0.6775|0.785|62.75|
+|Nikotinkonsum|0.9725|0.7925|0.87|30.25|
+|Nykturie|1|0.85|0.9175|19.25|
+|DiabetesMellitus|0.9025|0.905|0.8975|37.5|
+|micro avg|0.895|0.7275|0.8|738|
+|macro avg|0.9125|0.7675|0.825|738|
+|weighted avg|0.9|0.7275|0.7975|738|
+
+#### BERTscratch
+
+| Entity Class | F1-Score | Precision | Recall | Support |
+|AnginaPectoris|0.783|0.821|0.762|186.75|
+|Cholesterin/Lipide|0.891|0.877|0.909|35.75|
+|DiabetesMellitus|0.908|0.900|0.925|37.5|
+|Dyspnoe|0.698|0.758|0.653|99.5|
+|Familienanamnese|0.798|0.842|0.787|23.5|
+|Hypertonie|0.915|0.897|0.934|102.5|
+|Nikotinkonsum|0.939|0.944|0.938|30.25|
+|Nykturie|0.972|1.000|0.950|19.25|
+|Oedeme|0.842|0.878|0.815|62.75|
+|Palpitation|0.774|0.769|0.813|45.0|
+|Schwindel|0.915|0.935|0.908|43.75|
+|Synkope|0.879|0.922|0.848|51.5|
+|macro avg|0.860|0.879|0.854|738.0|
+|micro avg|0.832|0.852|0.815|738.0|
+|weighted avg|0.830|0.860|0.815|738.0|
+
+#### BERTbase
+
+| Entity Class | F1-Score | Precision | Recall | Support |
+|AnginaPectoris|0.831|0.847|0.819|186.75|
+|Cholesterin/Lipide|0.916|0.892|0.944|35.75|
+|DiabetesMellitus|0.893|0.877|0.927|37.5|
+|Dyspnoe|0.739|0.746|0.747|99.5|
+|Familienanamnese|0.817|0.845|0.819|23.5|
+|Hypertonie|0.928|0.916|0.942|102.5|
+|Nikotinkonsum|0.916|0.919|0.918|30.25|
+|Nykturie|0.972|0.987|0.960|19.25|
+|Oedeme|0.910|0.942|0.882|62.75|
+|Palpitation|0.792|0.820|0.796|45.0|
+|Schwindel|0.952|0.964|0.943|43.75|
+|Synkope|0.884|0.928|0.849|51.5|
+|macro avg|0.879|0.890|0.879|738.0|
+|micro avg|0.861|0.869|0.853|738.0|
+|weighted avg|0.860|0.876|0.853|738.0|
+
+#### BERTfine
+
+| Entity Class | F1-Score | Precision | Recall | Support |
+|AnginaPectoris|0.819|0.845|0.805|186.75|
+|Cholesterin/Lipide|0.909|0.898|0.925|35.75|
+|DiabetesMellitus|0.911|0.904|0.929|37.5|
+|Dyspnoe|0.740|0.746|0.743|99.5|
+|Familienanamnese|0.817|0.825|0.830|23.5|
+|Hypertonie|0.925|0.921|0.931|102.5|
+|Nikotinkonsum|0.919|0.932|0.907|30.25|
+|Nykturie|0.962|0.969|0.960|19.25|
+|Oedeme|0.900|0.903|0.899|62.75|
+|Palpitation|0.815|0.829|0.816|45.0|
+|Schwindel|0.956|0.954|0.961|43.75|
+|Synkope|0.895|0.941|0.854|51.5|
+|macro avg|0.881|0.889|0.880|738.0|
+|micro avg|0.859|0.868|0.851|738.0|
+|weighted avg|0.859|0.874|0.851|738.0|
+
 ### Precision/Recall Balance
 
 ![Example discharge letters.](../misc/prec_rec_balance_CardioBert.PNG)
