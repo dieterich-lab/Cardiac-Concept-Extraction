@@ -49,16 +49,18 @@ Feature functions CRF:
 
 | Feature | Description | Value | Example token, Value |
 |--|--|--|--|
-| isLowerCase | Token is lower-cased | binary | 'pektangiöse', True |
+| isLowerCase* | Token is lower-cased | binary | 'pektangiöse', True |
 | lastThreeChars | Last three characters of token | string | 'pektangiöse', 'öse' |
 | lastTwoChars | Last two characters of token | string | 'pektangiöse', 'se' |
-| isUpperCased | Token is upper-cased | binary | 'pektangiöse', False |
-| firstCharCapitalized| First character is capitalized | binary | 'Angina', True |
+| isUpperCased* | Token is upper-cased | binary | 'pektangiöse', False |
+| firstCharCapitalized* | First character is capitalized | binary | 'Angina', True |
 | isDigit | Token is integer value | binary | '15', True |
-| POSTag | Part-of-speech-tags generated using SpaCy's *de_core_news_md* model  | Universal POS tags | 'Angina', 'NOUN' |
-| POSTagLastTwoCharacters | Last two characters of POS tag | string | 'Angina', 'UN' |
+| POSTag* | Part-of-speech-tags generated using SpaCy's *de_core_news_md* model  | Universal POS tags | 'Angina', 'NOUN' |
+| POSTagLastTwoCharacters* | Last two characters of POS tag | string | 'Angina', 'UN' |
 | EndOfSentence | token is end of sentence | binary | '.', True |
 | BeginningOfSentence | token is beginning of sentence | binary | 'Der', True |
+
+* Feature is used as well for context token (+1: subsequent token, -1: preceding token)
 
 ### LSTM Classifier
 
