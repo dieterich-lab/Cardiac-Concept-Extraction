@@ -96,4 +96,5 @@ Figure 2: Balance between precision and recall per concept of the two baseline m
 ### Significance test
 
 ![Example discharge letters.](../misc/sign_test_CardioBERT.PNG)
-Figure 3: 
+Figure 3: Cardiovascular concepts per fold per model achieving p-value>0.5 using F1-score and approximate randomization (Yeh 2000, Pado 2006). E.g. Comparing the models difference of F1-score performance between Bertbase and CRF the concepts *AP*, *Oedeme*, *Palpitation* and *Schwindel* achieve a significance level p-value>0.5.
+
