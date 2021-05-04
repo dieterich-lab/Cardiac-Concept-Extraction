@@ -93,6 +93,7 @@ Hyperparamters LSTM classifier:
 #### CRF
 
 ||precision|recall|f1-score|support|
+|--|--|--|--|--|
 |AnginaPectoris|0.855|0.5825|0.6875|186.75|
 |Hypertonie|0.895|0.8975|0.895|102.5|
 |Cholesterin/Lipide|0.9045|0.87|0.885|35.75|
@@ -112,6 +113,7 @@ Hyperparamters LSTM classifier:
 #### LSTM
 
 ||precision|recall|f1-score|support|
+|--|--|--|--|--|
 |AnginaPectoris|0.87|0.62|0.725|186.75|
 |Hypertonie|0.8925|0.9075|0.8975|102.5|
 |Cholesterin/Lipide|0.9045|0.85|0.885|35.75|
@@ -131,6 +133,7 @@ Hyperparamters LSTM classifier:
 #### BERTscratch
 
 | Entity Class | F1-Score | Precision | Recall | Support |
+|--|--|--|--|--|
 |AnginaPectoris|0.783|0.821|0.762|186.75|
 |Cholesterin/Lipide|0.891|0.877|0.909|35.75|
 |DiabetesMellitus|0.908|0.900|0.925|37.5|
@@ -150,6 +153,7 @@ Hyperparamters LSTM classifier:
 #### BERTbase
 
 | Entity Class | F1-Score | Precision | Recall | Support |
+|--|--|--|--|--|
 |AnginaPectoris|0.831|0.847|0.819|186.75|
 |Cholesterin/Lipide|0.916|0.892|0.944|35.75|
 |DiabetesMellitus|0.893|0.877|0.927|37.5|
@@ -169,6 +173,7 @@ Hyperparamters LSTM classifier:
 #### BERTfine
 
 | Entity Class | F1-Score | Precision | Recall | Support |
+|--|--|--|--|--|
 |AnginaPectoris|0.819|0.845|0.805|186.75|
 |Cholesterin/Lipide|0.909|0.898|0.925|35.75|
 |DiabetesMellitus|0.911|0.904|0.929|37.5|
