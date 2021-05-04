@@ -90,3 +90,5 @@ Hyperparamters LSTM classifier:
 
 ### Precision/Recall Balance
 
+![Example discharge letters.](../misc/prec_rec_balance_CardioBert.PNG)
+Figure 2: Example discharge letter.
