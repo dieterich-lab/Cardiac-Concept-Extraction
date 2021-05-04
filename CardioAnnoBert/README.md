@@ -40,3 +40,40 @@ Table 1: Cardiovascular Concepts including ICD-10 code (if available) and descri
 |        Palpitation    |    R00.2 | Palpitation describe the conscious awareness of your own heartbeat. It is not graded.    |
 |        Schwindel    |   H81-82  | Vertigo describes the feeling of turning or swaying. It is not graded.    |
 |        Synkope    |  R55 | Syncopes describes the sudden loss of consciousness. It is not graded.|
+
+## 3. Baseline Classifier
+
+### CRF Classifier
+
+Feature functions CRF:
+
+| Feature | Description | Value | Example token, Value |
+|--|--|--|--|
+| isLowerCase | Token is lower-cased | binary | 'pektangiöse', True |
+| lastThreeChars | Last three characters of token | string | 'pektangiöse', 'öse' |
+| lastTwoChars | Last two characters of token | string | 'pektangiöse', 'se' |
+| isUpperCased | Token is upper-cased | binary | 'pektangiöse', False |
+| firstCharCapitalized| First character is capitalized | binary | 'Angina', True |
+| isDigit | Token is integer value | binary | '15', True |
+| POSTag | Part-of-speech-tags generated using SpaCy's *de_core_news_md* model  | Universal POS tags | 'Angina', 'NOUN' |
+| POSTagLastTwoCharacters | Last two characters of POS tag | string | 'Angina', 'UN' |
+| EndOfSentence | token is end of sentence | binary | '.', True |
+| BeginningOfSentence | token is beginning of sentence | binary | 'Der', True |
+
+### LSTM Classifier
+
+Architecture LSTM classifier:
+
+1. An embedding layer using 850B Glove embeddings with dimension 300.
+2. A bidirectional LSTM layer with dimension 128.
+3. A 0.25 dropout layer
+4. A dense layer with dimension 64
+5. A final crf layer
+
+Hyperparamters LSTM classifier:
+
+1. Batchsize: 64
+2. Epochs: 30
+3. Early stopping after five epoechs on validation loss
+4. Validation split 10%
+5. maximum sequence length: 512
