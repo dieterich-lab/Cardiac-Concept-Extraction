@@ -1,4 +1,4 @@
-# Supplement: CardioAnnoBert - Automatic Extraction of Twelve Cardiovascular Concepts from German Discharge Letters using Pre-trained Language Models
+# Supplement: CardioGerBert - Automatic Extraction of Twelve Cardiovascular Concepts from German Discharge Letters using Pre-trained Language Models
 
 ## 1. Data
 ### 1.1. Main Corpus
