@@ -28,18 +28,18 @@ Table 1: Cardiovascular Concepts including ICD-10 code (if available) and descri
 
 | Cardiovascular Concept | ICD-10 | Description |
 |--|--|--|
-|	Angina Pectoris | I20 | describes a chest pain or preassure. It is graded using the CCS classification. Value range is 1-4, while ranges like "2-3" can be used for annotation. |   
-|        Cholesterine/Lipide |  E78.* | This describes all appearances of cholesterols or lipids, mostly expressed as cardiovascular risk factors. It is not graded.    |
-|        Diabetes Mellitus    |  E10-14 |  Diabetes Mellitus is a metabolic disorder characterized by high blood sugar level. It is graded with the value range 1-2.    |
-|        Dyspnoe    |   R06.0 | Dyspnoe describes a feeling of not being able to breathe sufficiently.It is graded using the NYHA classification. Value range is 1-4, while ranges like "2-3" can be used for annotation.    |
-|        Familienanamnese   | None |    Familial anamnesis is a kind of anamnesis, which gives information about specific disease of family members. It is not graded.    |
-|        Hypertonie    |  I10.*  | Hypertension describes the disease when blood pressure in the arteries is persistently elevated. It is not graded.    |
-|        Nikotinkonsum    | F17.* |  Describes a state of dependence of nicotine. It is graded if the amount of pack years is expressed in the document.     |
-|        Nykturie    | R35 | Nocturia describes the need of a patient to wake up in the night to urinate. It is graded if the amount of times, the patient needs to get up in the night is expressed in the document.    |
-|        Ödeme    |    R60 | Edema is the swelling of body tissue due to fluid retention. Value range of grading is 1-2.    |
-|        Palpitation    |    R00.2 | Palpitation describe the conscious awareness of your own heartbeat. It is not graded.    |
-|        Schwindel    |   H81-82  | Vertigo describes the feeling of turning or swaying. It is not graded.    |
-|        Synkope    |  R55 | Syncopes describes the sudden loss of consciousness. It is not graded.|
+|	Angina Pectoris | I20 | Describes a chest pain or pressure. |   
+|        Dyspnoe|  R06.0| Dyspnoe describes a feeling of not being able to breathe sufficiently.  |
+|        Nykturie   | R35|  Nocturia describes the need of a patient to wake up in the night to urinate.    |
+|        Ödeme    |   R60 | Edema is the swelling of body tissue due to fluid retention.   |
+|        Palpitationen   | R00.2 |   Palpitation describes the conscious awareness of your own heartbeat.  |
+|        Schwindel    | H81-82 | Vertigo describes the feeling of turning or swaying.  |
+|        Synkope    | R55 |  Syncope describes the sudden loss of consciousness.  |
+|        Arterielle Hypertonie    | I10.* | Hypertension describes the disease when blood pressure in the arteries is persistently elevated.   |
+|        Hypercholesterinämie    |    E78.* | This describes all appearances of cholesterols or lipids, mostly expressed as cardiovascular risk factors.   |
+|        DM    |   E10-14 | Diabetes Mellitus is a metabolic disorder characterized by high blood sugar level.|
+|        FA    |   -  | Familial anamnesis is a kind of anamnesis, which gives information about specific disease of family members.   |
+|        Nikotinkonsum    |  F17.* | Describes a state of dependence of nicotine. |
 
 ![Distribution of sequence length per concept.](misc/heatmap.png)
 
