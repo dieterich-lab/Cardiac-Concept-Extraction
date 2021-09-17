@@ -58,17 +58,17 @@ Table 2: Inter annotator agreement per concept per corpus split including averag
 |Cardiovascular Concept  | Seed1 | Seed2 | Seed3 | Avg. Seed | Main35 |
 |--|--|--|--|--|--|
 |AP|72.1|80.6|93.9|82.2|78|
-|Cholesterin|94.1|94.7|100|96.2|95.2|
-|Diabetes|100|100|88.9|96.3|96|
 |Dyspnoe|92.3|91.7|62.5|81.1|82.5|
-|FA|57.1|80|94.7|77.1|95.2|
-|Hyp|100|95.7|100|98.5|98.1|
-|Nikotin|93.3|92.3|100|95.2|97|
 |Nykturie|88.8|90.9|100|93.2|100|
-|Oedeme|80|95.2|93.3|89.5|97.6|
+|Ödeme|80|95.2|93.3|89.5|97.6|
 |Palpitation|92.3|100|66.7|86.3|84.8|
 |Schwindel|83.3|88.8|100|90.7|90|
 |Synkope|100|83.3|92.3|91.9|100|
+|Arterielle Hypertonie|100|95.7|100|98.5|98.1|
+|Hypercholesterinämie|94.1|94.7|100|96.2|95.2|
+|DM|100|100|88.9|96.3|96|
+|FA|57.1|80|94.7|77.1|95.2|
+|Nikotinkonsum|93.3|92.3|100|95.2|97|
 
 ## 3. Inter Annotator Agreement
 
@@ -119,18 +119,18 @@ Table 4: Mean average 4-fold corss validated results per concept of the LSTM cla
 
 |Cardiovascular Concept |Precision|Recall|F1-score|Instances|
 |--|--|--|--|--|
-|AnginaPectoris|0.87|0.62|0.725|187|
-|Hypertonie|0.8925|0.9075|0.8975|103|
-|Cholesterin/Lipide|0.9045|0.85|0.885|36|
+|AP|0.87|0.62|0.725|187|
 |Dyspnoe|0.815|0.6525|0.717|100|
+|Nykturie|1|0.85|0.9175|19|
+|Ödeme|0.9525|0.6775|0.785|63|
+|Palpitation|0.865|0.665|0.735|45|
 |Schwindel|0.97|0.795|0.87|44|
 |Synkope|0.9425|0.7725|0.85|52|
-|Palpitation|0.865|0.665|0.735|45|
-|Familienanamnese|0.85|0.7175|0.765|24|
-|Oedeme|0.9525|0.6775|0.785|63|
+|Arterielle Hypertonie|0.8925|0.9075|0.8975|103|
+|Hypercholesterinämie|0.9045|0.85|0.885|36|
+|DM|0.9025|0.905|0.8975|38|
+|FA|0.85|0.7175|0.765|24|
 |Nikotinkonsum|0.9725|0.7925|0.87|30|
-|Nykturie|1|0.85|0.9175|19|
-|DiabetesMellitus|0.9025|0.905|0.8975|38|
 |micro avg|0.895|0.7275|0.8|738|
 |macro avg|0.9125|0.7675|0.825|738|
 |weighted avg|0.9|0.7275|0.7975|738|
