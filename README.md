@@ -3,8 +3,11 @@
 ## 1. Data
 ### 1.1. Main Corpus
 The main corpus used in this project consists of discharge letters from cardiology department as binary MS-DOC files. The corpus contains approximately 200,000 automatically de-identified discharge letters covering the time period 2004-2020 (example discharge letter snippet, Suppl. Fig. 1). This corpus was used for pre-training our BERT models. At the time of corpus annotation though, the main corpus just contained approximately 180,000 discharge letters, covering the time period 2004-2016. 
+
 The letters (Arztbriefe) vary a lot in scope and structure between different clinical domains. They are supposed to be short and concise. Next to personal data like the name of the patient, address and birth date, most notes contain past and current diagnoses. In addition, patients' clinical history and planned clinical examinations and therapy are described. If accomplished, results of laboratory and sensor examinations are as well part of a discharge letter (details, see: https://de.wikipedia.org/wiki/Arztbrief).
+
 Length of the discharge letters in our data set vary a lot. The letters contain between half a DIN A4 page to approximately five pages. 
+
 All documents share a basic structure. Thus, typical for clinical routine text data, they contain a semi-structure. The majority of the discharge letters contain a header containing contact information, a salutation, a clinical section and a summary. The clinical section typically contains a subset of the following subsections: diagnosis, cardiovascular risk factors, allergies, anamnese, physical examination (Körperlicher Untersuchungsbefund), laboratory data, ECG, MRI and recommended therapy/medication. The amount of text in each subsection is varying. The subsections contain free unstructured text, sometimes tables, rarely images. Occasionally subsections are titled differently, but contain similar information, e.g. therapy/medication. Often terms are abbreviated, e.g. CRF/Cardiovascular risk factors. The letters are concluded by a salutation and the names of the physicians involved. Figure 1 shows a dummy discharge letter:
 
 ![Example discharge letters.](misc/dummy_discharge.png)
