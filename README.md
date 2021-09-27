@@ -146,6 +146,6 @@ The classifier had the following architecture:
 Following hyperparamters had been applied:
 1. Batchsize: 64
 2. Epochs: 30
-3. Early stopping after five epoechs on validation loss
+3. Early stopping after five epochs on validation loss
 4. Validation split 10%
 5. maximum sequence length: 512
