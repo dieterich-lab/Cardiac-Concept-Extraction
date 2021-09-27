@@ -137,13 +137,13 @@ Table 4: Mean average 4-fold corss validated results per concept of the LSTM cla
 
 The classifier had the following architecture:
 
-1. An embedding layer using 850B Glove embeddings with dimension 300.
+1. An embedding layer using 840B Glove embeddings with dimension 300.
 2. A bidirectional LSTM layer with dimension 128.
 3. A 0.25 dropout layer
 4. A dense layer with dimension 64
 5. A final crf layer
 
-Following hyperparamters had been applied:
+Hyperparameters:
 1. Batchsize: 64
 2. Epochs: 30
 3. Early stopping after five epochs on validation loss
